@@ -1,0 +1,7 @@
+.list{
+    margin-Top:"50px";
+    display :'flex';
+    flex-Wrap: 'wrap'; 
+    align-Items: 'center'; 
+    justify-Content: 'space-around'   
+}
