@@ -4,8 +4,8 @@ import MovieList from '../MovieList/MovieList';
 function Home() {
   const [data,setData]= useState([]);
   async function gitAllMovies(){
-  const url=`${process.env.REACT_APP_SERVER_URL}`;
-  //console.log(url);
+  const url=process.env.REACT_APP_SERVER_URL;
+ // console.log(url);
     const res=await fetch(`${url}/trending`);
     const movies=await res.json();
     setData(movies);
