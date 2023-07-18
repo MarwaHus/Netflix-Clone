@@ -12,7 +12,7 @@ function NavBar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="/" style={{mouseover:"mouseover()"}}>Home</Nav.Link>
-          <Nav.Link href="/favList">Favourite Movies</Nav.Link>
+          <Nav.Link href="/getMovies">Favourite Movies</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

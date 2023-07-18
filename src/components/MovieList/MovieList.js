@@ -2,6 +2,21 @@ import React from 'react';
 import Movie from '../Movie/Movie';
 import './MovieList.css'
 function MovieList({ data }) {
+
+  
+  function commentHandler(newMovie,id){
+console.log(newMovie,id ,'from movelist');
+data.map((movie)=>{
+  if(movie.id ===id){
+movie.comment=newMovie.userComment;
+return movie;
+  }else{
+return movie;
+  }
+
+})
+console.log('comment handler',data);
+  }
   return (
     <div className='list'
     style={{
@@ -13,7 +28,7 @@ function MovieList({ data }) {
       gap: "18px",
     }}>
       {data.map((obj, i) => (
-        <Movie data={obj} key={i}/>
+        <Movie commentHandler={commentHandler} data={obj} key={i}/>
       ))}
     </div>
   );
