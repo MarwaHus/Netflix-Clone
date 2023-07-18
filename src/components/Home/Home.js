@@ -10,10 +10,12 @@ function Home() {
     const movies=await res.json();
     setData(movies);
   }
+  //function commentHandler(newMovie,id){}
   useEffect(()=>{
     gitAllMovies()
-    console.log('',data);
+   
   },[])
+   console.log('',data);
   return (
    /* <div>
       {data.map((obj,i)=>(
